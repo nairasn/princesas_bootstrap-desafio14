@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/coroa.ico" type="image/x-icon">
+    <title>:Disney Princess - Desafio Aula 14 ♥:</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/disney-prin-logo.png" alt="" class="header-logo">
+
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+        </span>
+
+        <nav class="header-nav" id="itens_menu">
+            <ul>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/Disney_Princesa#" target="_blank" >✦ Disney Princesas</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=PBrThRTfrdc" target="_blank" >✦ Moana é a melhor sim ou com certeza!?</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=UJYgsi2VwQw" target="_blank" >✦ Vocês conhecem Raya?</a>
+                </li>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/Disney_Princesa#O_caso_de_Anna_e_Elsa" target="_blank" >✦ Porque Ana e Elsa não são Princesas?</a>
+                </li>      
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itensMenu = document.getElementById('itens_menu');
+        
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer(){
+            if (itensMenu.style.display == 'block'){
+                itensMenu.classList.remove('show');
+            }
+            else{
+                itensMenu.classList.toggle('show');
+            }
+        }
+    </script>
+
+    <main>
+        <section class="fundo">
+            <div class="botao-galeria">
+                    <a href="./galeria.html" target="_blank" >✦ Galeria Disney Princesas ✦ </Galeria></a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">
+        <div class="footer-icon">
+
+            <div class="icone">
+                <a href="https://github.com/nairasn" target="_blank">
+                    <img src="./img/github.png" alt="">
+                </a>
+            </div>
+
+            <div class="icone">
+                <a href="https://www.linkedin.com/in/naira-nascimento/" target="_blank">
+                    <img src="./img/linkedin.png" alt="">
+                </a>
+            </div>
+                     
+            <div class="icone">
+                <a href="https://www.instagram.com/nainascimento_/" target="_blank">
+                    <img src="./img/instagram.png" alt="">
+                </a>
+            </div>
+
+        </div>
+        ✦ Naira Souza ♥ Desafio 14 ✿ Elas na Tech 2023 ✦
+    </footer>
+
+
+</body>
+</html>
